@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PromptManifest",
+  "description": "Schema for a versioned prompt manifest",
+  "type": "object",
+  "properties": {
+    "content": {
+      "title": "Content",
+      "description": "The prompt content",
+      "type": "string"
+    },
+    "version": {
+      "title": "Version",
+      "description": "Semantic version of the prompt",
+      "type": "string"
+    },
+    "embeddings": {
+      "title": "Embeddings",
+      "description": "Embedding vector for semantic comparison",
+      "type": "array",
+      "items": {
+        "type": "number"
+      }
+    },
+    "description": {
+      "title": "Description",
+      "description": "Optional description of the prompt",
+      "type": "string"
+    },
+    "tags": {
+      "title": "Tags",
+      "description": "Optional tags for categorization",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "model": {
+      "title": "Model",
+      "description": "Target model identifier (e.g. gpt-4)",
+      "type": "string",
+      "default": "gpt-4"
+    }
+  },
+  "required": ["content", "version", "embeddings", "model"],
+  "additionalProperties": false
+} 
