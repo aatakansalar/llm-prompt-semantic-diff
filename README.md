@@ -9,6 +9,8 @@ A CLI tool for managing and comparing LLM prompts using semantic diffing instead
 
 LLM Prompt Semantic Diff delivers a lightweight command‑line workflow for managing, packaging, and *semantic* diffing of Large Language Model prompts. It addresses the blind spot where ordinary text‑based `git diff` fails to reveal meaning‑level changes that materially affect model behaviour.
 
+Read More: https://medium.com/@aatakansalar/catching-prompt-regressions-before-they-ship-semantic-diffing-for-llm-workflows-feb3014ccac3
+
 ## Key Features
 
 - **F-1**: `prompt init` - Generates skeletal prompt files and default manifests
