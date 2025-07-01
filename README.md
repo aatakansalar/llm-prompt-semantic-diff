@@ -23,7 +23,13 @@ Read More: https://medium.com/@aatakansalar/catching-prompt-regressions-before-t
 
 ## Installation
 
-Install from source:
+### Install from PyPI (Recommended)
+
+```bash
+pip install llm-prompt-semantic-diff
+```
+
+### Install from source
 
 ```bash
 git clone https://github.com/aatakansalar/llm-prompt-semantic-diff
